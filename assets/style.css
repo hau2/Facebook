@@ -70,7 +70,7 @@ body {
     border-radius: 10px;
 }
 .header__menu-item:hover,
-.function__list-link:hover {
+.nav__list-link:hover {
     background-color: #3A3B3C;
 }
 .header__menu-link {
@@ -164,14 +164,14 @@ body {
     top: 56px;
     height: 100vh;
 }
-.function__list {
+.nav__list {
     padding: 14px 0 0 0;
     margin-left: -12px;
     width: 272px;
     height: 90vh;
     overflow-y: scroll; 
 }
-.function__list-link {
+.nav__list-link {
     padding-left: 4px;
     display: flex;
     align-items: center;
@@ -187,15 +187,30 @@ body {
     display: block;
     margin-left: 12px;
 }
-.link-img:first-child{
+.nav__list-item .link-img img {
     border-radius: 50%;
+}
+.nav__list-item:first-child .link-img img{
     overflow: hidden;
 }
 .link-img {
+    position: relative;
     height: 28px;
 }
 .link-img img {
     height: 100%;
+}
+.right-list .link-img::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #31A24C;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #000;
+    border-radius: 50%;
 }
 .center-list {
     display: flex;
@@ -511,10 +526,36 @@ body {
 /* right list */
 .right-list {
     position: fixed;
-    width: 272px;
+    display: flex;
+    justify-content: flex-end;
     width: 30%;
     top: 56px;
+    right: 0;
     height: 100vh;
-    background-color: yellow;
 }
-
+.contact__heading {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #A8ABAF;
+    font-size: 16px;
+}
+.contact__title {
+    flex: 2;
+}
+.contact__function {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+.contact__function div {
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.contact__function div:hover {
+    background-color: var(--primary-hover);
+}
