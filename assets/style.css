@@ -10,7 +10,7 @@ body {
     padding: 0 16px;
     background-color: #242526;
     height: 56px;
-    border-bottom: 0.1px solid #393A3B;
+    border-bottom: 0.1px solid var(--border-color);
     display: flex;
     align-items: center;
     justify-content: space-between
@@ -45,7 +45,7 @@ body {
     border-radius: 20px;
 }
 .header__with-search-input {
-    width: 220px;
+    width: 180px;
     margin-left: 10px;
     color: #ccc;
     background-color: #3A3B3C;
@@ -315,8 +315,200 @@ body {
     margin-top: 20px;
     width: 500px;
     height: 400px;
-    background-color: aqua;
 }
+.news-list > div,
+.news-list > ul > li {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color:var(--content-color);
+}
+/* upload */
+.upload {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 123px;
+}
+.upload__input-wrap {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    border-bottom: 1px solid var(--border-color);
+}
+.upload__form-input {
+    display: flex;
+    align-items: center;
+    flex: 9;
+    height: 70%;
+}
+.upload__with-input {
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #3A3B3C;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: var(--white-color);
+}
+.upload__avata {
+    flex: 1;
+    display: block;
+    height: 70%;
+}
+.upload__avata-img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.upload__status {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.upload__status > div {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.upload__status > div span {
+    margin-left: 10px;
+    color: #A7B3B8;
+    font-size: 15px;
+}
+.upload__status > div i {
+    font-size: 24px;
+}
+.upload__status > div:first-child i{
+    color: #F02849;
+}
+.upload__status > div:nth-child(2) i{
+    color: #45BD62;
+}
+.upload__status > div:last-child i{
+    color: #F7B928;
+}
+
+/* Quick room */
+.quick-room {
+    margin-top: 20px;
+    height: 58px;
+    background-color: var(--content-color);
+}
+
+/* Upload list post */
+.upload__list-post {
+    margin-top: 18px;
+}
+.upload__list-post > li:not(:first-child) {
+    margin-top: 16px;
+} 
+.upload__header {
+    margin-top: 12px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    width: 100%;
+}
+.upload__header-info {
+    display: flex;
+    height: 90%;
+}
+.upload__list-avata {
+    display: block;
+    height: 100%;
+}
+.upload__avata-img {
+    height: 100%;
+}
+.upload__header-info-details {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.upload__header-name {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+.upload__header-time-wrap {
+    color: #A8ABAF;
+    margin-top: 4px;
+    font-size: 14px;
+}
+.upload__header-time-wrap i {
+    font-size: 12px;
+}
+.upload__header-about-link {
+    display: block;
+    padding: 8px;
+    border-radius: 50%;
+    color: #E4E6EB;
+}
+.upload__header-about-link:hover {
+    background-color: var(--primary-hover);
+}
+.upload__title {
+    margin-top: 4px;
+    padding:  0 12px;
+    color: #E4E6EB;
+    font-size: 14px;
+}
+.upload__image {
+    display: block;
+    margin-top: 14px;
+}
+.upload__image-img {
+    width: 100%;
+}
+.upload__number-react-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 14px;
+    color: #A8ABAF;
+    font-size: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+.upload__react-icon-num span {
+    margin-right: 4px;
+}
+.upload__react {
+    padding: 2px 20px;
+    display: flex;
+}
+.upload__react > a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0 4px;
+    font-size: 16px;
+    color: #A8ABAF;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.upload__react > a:hover {
+    background-color: var(--primary-hover);
+}
+.upload__react > a span {
+    margin-left: 10px;
+}
+
+
+/* right list */
 .right-list {
     position: fixed;
     width: 272px;
@@ -325,3 +517,4 @@ body {
     height: 100vh;
     background-color: yellow;
 }
+

@@ -11,11 +11,39 @@ html {
     box-sizing: border-box;
 }
 :root {
+    --content-color: #242526;
+    --border-color: #393A3B;
+    --primary-hover: #3A3B3C;
     --gray-color: #555555;
     --white-color: #fff;
     --black-color: #333;
     --text-color: #000;
  }
+ .like-icon {
+    color: #129CF7;
+    font-size: 18px;
+}
+.haha-icon {
+    color: #e2ba5d;
+    font-size: 18px;
+    margin-left: -3px;
+}
+.love-icon {
+    color: #F03659;
+    font-size: 18px;
+    margin-left: -3px;
+}
+.sad-icon {
+    color: #e2c870;
+    font-size: 18px;
+    margin-left: -3px;
+}
+.blue-tick-icon {
+    color: #2D88FF;
+    background-color: #fff;
+    margin-left: 4px;
+    border-radius: 50px;
+}
 
  .function__list::-webkit-scrollbar-track
 {
