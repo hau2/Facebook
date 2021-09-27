@@ -500,7 +500,6 @@ body {
     margin-right: 4px;
 }
 .upload__react {
-    padding: 2px 20px;
     display: flex;
 }
 .upload__react > a {
