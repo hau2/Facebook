@@ -223,18 +223,20 @@ body {
 .story {
     margin-top: 80px;
     height: 198px;
-    width: 598px;
+    width: 100%;
 }
 .story-list {
     height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .story-item {
     overflow: hidden;
     width: 111px;
     border-radius: 10px;
+    margin: 0 5px;
 }
 .create-story {
     position: absolute;
@@ -328,8 +330,8 @@ body {
 /* News */
 .news-list {
     margin-top: 20px;
-    width: 500px;
-    height: 400px;
+    width: 90%;
+    height: auto;
 }
 .news-list > div,
 .news-list > ul > li {
