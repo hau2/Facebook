@@ -4,8 +4,16 @@
     .header__with-search-input,
     .right-list,
     .left-list,
-    .story-item:last-child {
-        display: none;
+    .story-item:last-child,
+    .upload__status span,
+    .header__info {
+        display: none !important;
+    }
+    .container {
+        padding: 0;
+    }
+    .news-list {
+        width: 100%;
     }
 }
 
@@ -13,8 +21,12 @@
 @media (min-width: 768px) and (max-width: 991px) {
     .header__menu-wrap,
     .right-list,
-    .left-list {
+    .left-list,
+    .header__info {
         display: none;
+    }
+    .news-list {
+        width: 100%;
     }
 }
 
@@ -22,7 +34,8 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     .header__menu-wrap,
     .right-list,
-    .left-list {
+    .left-list,
+    .header__info {
         display: none;
     }
 }

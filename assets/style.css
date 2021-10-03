@@ -157,7 +157,7 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    height: 700px;
+    height: auto;
 }
 .left-list {
     position: fixed;
@@ -222,7 +222,7 @@ body {
 /* Story */
 .story {
     margin-top: 80px;
-    height: 198px;
+    height: auto;
     width: 100%;
 }
 .story-list {
